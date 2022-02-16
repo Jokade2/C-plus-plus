@@ -1,0 +1,82 @@
+Задание 1
+
+#include <iostream>
+
+double calc (double x, double y, char operation) {
+    switch (operation) {
+        case '+':
+            return x + y;
+        case '-':
+            return x - y;
+        case '*':
+            return x * y;
+        case '/':
+            return x / y;
+        default:
+            return 0;
+    }
+}
+
+int main(){
+    std::cout << "write 2 numbers \n";
+    double x,y;
+    std::cin >> x;
+    std::cin >> y;
+    char operation = 0;
+    std::cin >> operation;
+    std::cout << calc(x, y, operation);
+    return 0;
+
+
+}
+
+
+
+Задание 2
+
+#include <iostream>
+#include "windows.h"
+
+using namespace std;
+
+int main() {
+cout << "Write n \n";
+int n = 0;
+cin >> n;
+while (n > 0)
+{
+    cout << n << " ";
+    Sleep(1000);
+    --n;
+  }
+}
+
+
+
+
+Задание 3
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n = 1;
+
+    while (n <= 150) {
+
+        string apple = "яблок";
+
+        if (n == 1 || n % 10 == 1) {
+            apple += "о";
+        }
+        if ((n > 1 && n < 5) || (n % 10 > 1 && n % 10 < 5)) {
+            apple += "а";
+        }
+
+        if ((n >= 5 && n < 10) || (n % 10 >= 5 && n % 10 < 10) || (n % 100 > 10 && n % 100 < 15)) {
+            apple = "яблок";
+        }
+
+        cout << n << ' ' << apple << endl;
+        n++;
+    }
+}
