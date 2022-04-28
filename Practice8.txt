@@ -1,17 +1,7 @@
-#define _USE_MATH_DEFINES 
-#include <string> 
-#include <stack>
-#include <algorithm> 
-#include <cmath> 
-#include <iomanip> 
-#include <fstream> 
-#include <deque> 
-#include <vector> 
-#include <stdlib.h> 
-#include <set> 
-#include <queue>
+#include <string>
+#include <cmath>
+#include <vector>
 #include <iostream>
-#include <climits>
 
 using namespace std;
 
